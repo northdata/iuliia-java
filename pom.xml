@@ -50,7 +50,7 @@
 
         <!--TESTS-->
         <junit.version>5.11.0</junit.version>
-        <mockito.version>5.13.0</mockito.version>
+        <mockito.version>5.20.0</mockito.version>
 
         <!--PLUGINS-->
         <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
