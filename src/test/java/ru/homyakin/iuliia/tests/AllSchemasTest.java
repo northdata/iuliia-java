@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import ru.homyakin.iuliia.Schemas;
 import ru.homyakin.iuliia.Translator;
 
-public class SchemasTest {
+public class AllSchemasTest {
 
     @Test
     public void alaLcTest() throws IOException {
