@@ -126,6 +126,10 @@ public enum Schemas {
      */
     WIKIPEDIA("wikipedia.json"),
     /**
+     * Wikipedia Bulgarian-German <a href="https://de.wikipedia.org/wiki/Wikipedia:Namenskonventionen/Kyrillisch">transliteration schema</a>. 
+     */
+    WIKIPEDIA_DE_BG("wikipedia_bg_de.json"),
+    /**
      * Yandex.Maps transliteration schema for geographic names.
      */
     YANDEX_MAPS("yandex_maps.json"),

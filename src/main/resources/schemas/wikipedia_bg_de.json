@@ -1,0 +1,57 @@
+{
+    "name": "duden",
+    "description": "German Widipedia transliteration schema for Bulgarian",
+    "url": "https://de.wikipedia.org/wiki/Wikipedia:Namenskonventionen/Kyrillisch",
+    "mapping": {
+        "а": "a",
+        "б": "b",
+        "в": "w",
+        "г": "g",
+        "д": "d",
+        "е": "e",
+        "ж": "sh",
+        "з": "s",
+        "и": "i",
+        "й": "j",
+        "к": "k",
+        "л": "l",
+        "м": "m",
+        "н": "n",
+        "о": "o",
+        "п": "p",
+        "р": "r",
+        "с": "s",
+        "т": "t",
+        "у": "u",
+        "ф": "f",
+        "х": "ch",
+        "ц": "z",
+        "ч": "tsch",
+        "ш": "sch",
+        "щ": "scht",
+        "ъ": "a",
+        "ы": "y",
+        "ь": "",
+        "э": "e",
+        "ю": "ju",
+        "я": "ja"
+    },
+    "prev_mapping": {
+    },
+    "next_mapping": {
+        "ьа": "j",
+        "ьи": "j",
+        "ьо": "j",
+        "ьу": "j"
+    },
+    "ending_mapping": {
+        "ий": "i",
+        "ия": "ia"
+    },
+    "samples": [
+        [
+            "Всички хора се раждат свободни и равни по достойнство и права. Те са надарени с разум и съвест и следва да се отнасят помежду си в дух на братство.",
+            "Wsitschki chora se rashdat swobodni i rawni po dostojnstwo i prawa. Te sa nadareni s rasum i sawest i sledwa da se otnasjat pomeshdu si w duch na bratstwo."
+        ]
+    ]
+}

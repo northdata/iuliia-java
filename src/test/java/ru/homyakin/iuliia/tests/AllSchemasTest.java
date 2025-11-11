@@ -60,6 +60,14 @@ public class AllSchemasTest {
     }
 
     @Test
+    public void wikipediaBgDeTest() throws IOException {
+        var translator = new Translator(Schemas.WIKIPEDIA_DE_BG);
+        var sentence = translator.translate("Всички хора се раждат свободни и равни по достойнство и права. Те са надарени с разум и съвест и следва да се отнасят помежду си в дух на братство.");
+        Assertions.assertEquals("Wsitschki chora se rashdat swobodni i rawni po dostojnstwo i prawa. Te sa nadareni s rasum i sawest i sledwa da se otnasjat pomeshdu si w duch na bratstwo.", sentence);
+    }
+
+
+    @Test
     public void gost779Test() throws IOException {
         var translator = new Translator(Schemas.GOST_779);
         var sentence = translator.translate("Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю");
