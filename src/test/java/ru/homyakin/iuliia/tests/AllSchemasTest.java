@@ -68,7 +68,7 @@ public class AllSchemasTest {
 
     @Test
     public void wikipediaBgDeTest() throws IOException {
-        var translator = new Translator(Schemas.WIKIPEDIA_GB_DE);
+        var translator = new Translator(Schemas.WIKIPEDIA_BG_DE);
         var sentence = translator.translate("Всички хора се раждат свободни и равни по достойнство и права. Те са надарени с разум и съвест и следва да се отнасят помежду си в дух на братство.");
         Assertions.assertEquals("Wsitschki chora se rashdat swobodni i rawni po dostojnstwo i prawa. Te sa nadareni s rasum i sawest i sledwa da se otnasjat pomeshdu si w duch na bratstwo.", sentence);
     }
