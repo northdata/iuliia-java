@@ -31,6 +31,13 @@ public enum Schemas {
      */
     BGN_PCGN("bgn_pcgn.json"),
     /**
+     * BGN/PCGN romanization system for Bulgarian.
+     * Developed by United States Board on Geographic Names (BGN)
+     * and by the Permanent Committee on Geographical Names for British Official Use (PCGN).
+     * Universal usage.
+     */
+    BGN_PCGN_BG("bgn_pcgn_bg.json"),
+    /**
      * Same as {@link #BGN_PCGN} but without interpunct.
      */
     BGN_PCGN_ALT("bgn_pcgn_alt.json"),
@@ -128,7 +135,7 @@ public enum Schemas {
     /**
      * Wikipedia Bulgarian-German <a href="https://de.wikipedia.org/wiki/Wikipedia:Namenskonventionen/Kyrillisch">transliteration schema</a>. 
      */
-    WIKIPEDIA_DE_BG("wikipedia_bg_de.json"),
+    WIKIPEDIA_GB_DE("wikipedia_bg_de.json"),
     /**
      * Yandex.Maps transliteration schema for geographic names.
      */
