@@ -41,8 +41,8 @@ public class AllSchemasTest {
     @Test
     public void bgnPcgnBgTest() throws IOException {
         var translator = new Translator(Schemas.BGN_PCGN_BG);
-        var sentence = translator.translate("Юлия, каньон. Всички хора се раждат свободни и равни по достойнство и права. Те са надарени с разум и съвест и следва да се отнасят помежду си в дух на братство.");
-        Assertions.assertEquals("Yulia, kanyon. Vsichki hora se razhdat svobodni i ravni po dostoynstvo i prava. Te sa nadareni s razum i savest i sledva da se otnasyat pomezhdu si v duh na bratstvo.", sentence);
+        var sentence = translator.translate("Юлия, каньон, Игорь. Всички хора се раждат свободни и равни по достойнство и права. Те са надарени с разум и съвест и следва да се отнасят помежду си в дух на братство.");
+        Assertions.assertEquals("Yulia, kanyon, Igor. Vsichki hora se razhdat svobodni i ravni po dostoynstvo i prava. Te sa nadareni s razum i savest i sledva da se otnasyat pomezhdu si v duh na bratstvo.", sentence);
     }
 
     @Test
@@ -69,8 +69,8 @@ public class AllSchemasTest {
     @Test
     public void wikipediaBgDeTest() throws IOException {
         var translator = new Translator(Schemas.WIKIPEDIA_BG_DE);
-        var sentence = translator.translate("Всички хора се раждат свободни и равни по достойнство и права. Те са надарени с разум и съвест и следва да се отнасят помежду си в дух на братство.");
-        Assertions.assertEquals("Wsitschki chora se rashdat swobodni i rawni po dostojnstwo i prawa. Te sa nadareni s rasum i sawest i sledwa da se otnasjat pomeshdu si w duch na bratstwo.", sentence);
+        var sentence = translator.translate("Мария, Кърджали, каньон. Всички хора се раждат свободни и равни по достойнство и права. Те са надарени с разум и съвест и следва да се отнасят помежду си в дух на братство.");
+        Assertions.assertEquals("Marija, Kardschali, kanjon. Wsitschki chora se raschdat swobodni i rawni po dostojnstwo i prawa. Te sa nadareni s rasum i sawest i sledwa da se otnasjat pomeschdu si w duch na bratstwo.", sentence);
     }
 
     @Test

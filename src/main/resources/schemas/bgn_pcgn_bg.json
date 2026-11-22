@@ -1,5 +1,5 @@
 {
-    "name": "bgn_pcgn",
+    "name": "bgn_pcgn_bg",
     "description": "BGN/PCGN transliteration schema for Bulgarian",
     "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1105090/ROMANIZATION_OF_BULGARIAN_with_examples.pdf",
     "mapping": {
@@ -30,7 +30,7 @@
         "ш": "sh",
         "щ": "sht",
         "ъ": "a",
-        "ь": "’",
+        "ь": "",
         "э": "e",
         "ю": "yu",
         "я": "ya"
