@@ -56,6 +56,7 @@ public class Schema {
      * <p>
      * The letter is transliterated according to the following rules:
      * <ol>
+     * <li>If a mapping for the previous, current and next letter together exists, it is used.
      * <li>If a mapping for the previous letter and the current letter exists, it is used.
      * <li>If a mapping for the current letter and the next letter exists, it is used.
      * <li>If a mapping for the current letter exists, it is used.
@@ -68,7 +69,10 @@ public class Schema {
      * @return the transliterated letter
      */
     public String translateLetter(String prev, String curr, String next) {
-        var letter = prevMapping.get(prev + curr);
+        var letter = mapping.get(prev + curr + next);
+        if (letter == null) {
+            letter = prevMapping.get(prev + curr);
+        }
         if (letter == null) {
             letter = nextMapping.get(curr + next);
         }
@@ -85,7 +89,13 @@ public class Schema {
         } else {
             final var entrySet = new HashSet<>(mapping.entrySet());
             for (var entry : entrySet) {
-                mapping.put(capitalize(entry.getKey()), capitalize(entry.getValue()));
+                if (entry.getKey().length() > 1) {
+                    // context keys (prev + curr + next) keep their value when only the first letter is capitalized
+                    mapping.put(capitalize(entry.getKey()), entry.getValue());
+                    mapping.put(entry.getKey().toUpperCase(), entry.getValue().toUpperCase());
+                } else {
+                    mapping.put(capitalize(entry.getKey()), capitalize(entry.getValue()));
+                }
             }
             this.mapping = mapping;
         }
