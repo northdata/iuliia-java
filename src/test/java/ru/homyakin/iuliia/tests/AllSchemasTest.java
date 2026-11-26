@@ -74,6 +74,14 @@ public class AllSchemasTest {
     }
 
     @Test
+    public void wikipediaBgDeTest_Pyce() throws IOException {
+        var translator = new Translator(Schemas.WIKIPEDIA_BG_DE);
+
+        var pyce = translator.translate("Русе");
+        Assertions.assertEquals("Russe", pyce);
+    }
+
+    @Test
     public void gost779Test() throws IOException {
         var translator = new Translator(Schemas.GOST_779);
         var sentence = translator.translate("Юлия, съешь ещё этих мягких французских булок из Йошкар-Олы, да выпей алтайского чаю");
